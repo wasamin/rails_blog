@@ -15,6 +15,7 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= image_tag article.image.thumb.url %></td>
         <td><%= article.title %></td>
         <td><%= article.body %></td>
         <td><%= article.author.name %></td>
